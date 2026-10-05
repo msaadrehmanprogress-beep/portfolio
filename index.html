@@ -1,76 +1,1052 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <meta name="description"
+        content="Saad Rehman - Computer Science Student and Aspiring Python Developer Portfolio">
+
+    <title>Saad Rehman | Python Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <nav>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-        <a href="index.html">Home</a>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
 
-        <a href="about.html">About</a>
+            <a href="#home" class="logo">
+                <span>&lt;</span>Saad<span>/&gt;</span>
+            </a>
 
-        <a href="skills.html">Skills</a>
+            <div class="nav-menu" id="navMenu">
 
-        <a href="education.html">Education</a>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
 
-        <a href="contact.html">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
-    </nav>
+            </div>
 
-    <div class="home">
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <h1>Welcome To My Portfolio</h1>
+        </nav>
+    </header>
 
-        <p>
-            Hello! I am Saad, a BS Computer Science student.
-            I am learning Web Development, Artificial Intelligence,
-            and Machine Learning.
-        </p>
 
-        <a href="about.html" class="btn">Explore More</a>
+    <main>
 
-    </div>
+        <!-- ================= HERO ================= -->
 
-    <footer>
+        <section class="hero section" id="home">
 
-        <h3>My Portfolio</h3>
+            <div class="hero-background">
+                <div class="glow glow-one"></div>
+                <div class="glow glow-two"></div>
+                <div class="grid-background"></div>
+            </div>
 
-        <p>
-            Thank you for visiting my portfolio website.
-        </p>
+            <div class="container hero-container">
 
-        <div class="footer-links">
+                <div class="hero-content">
 
-            <a href="index.html">Home</a>
+                    <div class="available-badge">
+                        <span class="status-dot"></span>
+                        Open to Internship Opportunities
+                    </div>
 
-            <a href="about.html">About</a>
+                    <p class="hero-small">
+                        Hello, I'm
+                    </p>
 
-            <a href="skills.html">Skills</a>
+                    <h1>
+                        Saad <span>Rehman</span>
+                    </h1>
 
-            <a href="education.html">Education</a>
+                    <h2>
+                        Computer Science Student &
+                        <span id="typingText">Aspiring Python Developer</span>
+                    </h2>
 
-            <a href="contact.html">Contact</a>
+                    <p class="hero-description">
+                        I build clean, responsive and user-friendly websites
+                        while continuously developing my Python and JavaScript
+                        programming skills.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://github.com/msaadrehmanprogress-beep"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                        <a
+                            href="mailto:msaadrehmanprogrss@gmail.com"
+                            aria-label="Email">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </a>
+
+                        <a href="#contact" aria-label="Contact">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="code-window">
+
+                        <div class="window-top">
+
+                            <div class="window-buttons">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="window-title">
+                                saad.py
+                            </span>
+
+                        </div>
+
+                        <div class="code-content">
+
+                            <p>
+                                <span class="keyword">class</span>
+                                <span class="class-name">Developer</span>:
+                            </p>
+
+                            <p class="indent">
+                                <span class="keyword">def</span>
+                                <span class="function">__init__</span>
+                                (<span class="variable">self</span>):
+                            </p>
+
+                            <p class="double-indent">
+                                self.name =
+                                <span class="string">"Saad Rehman"</span>
+                            </p>
+
+                            <p class="double-indent">
+                                self.role =
+                                <span class="string">"Python Developer"</span>
+                            </p>
+
+                            <p class="double-indent">
+                                self.skills = [
+                            </p>
+
+                            <p class="triple-indent">
+                                <span class="string">"HTML"</span>,
+                                <span class="string">"CSS"</span>,
+                            </p>
+
+                            <p class="triple-indent">
+                                <span class="string">"JavaScript"</span>,
+                                <span class="string">"Python"</span>
+                            </p>
+
+                            <p class="double-indent">]</p>
+
+                            <p class="indent">
+                                <span class="keyword">def</span>
+                                <span class="function">learn</span>
+                                (<span class="variable">self</span>):
+                            </p>
+
+                            <p class="double-indent">
+                                <span class="keyword">return</span>
+                                <span class="string">
+                                    "Always improving 🚀"
+                                </span>
+                            </p>
+
+                            <span class="cursor"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-one">
+                        <i class="fa-brands fa-python"></i>
+                        <div>
+                            <strong>Python</strong>
+                            <small>Currently Learning</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <strong>Web Development</strong>
+                            <small>HTML • CSS • JS</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number">01</span>
+                    <div>
+                        <p class="section-label">GET TO KNOW ME</p>
+                        <h2>About <span>Me</span></h2>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <h3>
+                            Turning ideas into
+                            <span>functional experiences.</span>
+                        </h3>
+
+                        <p>
+                            I'm a BS Computer Science student with a strong
+                            interest in software development and web
+                            technologies.
+                        </p>
+
+                        <p>
+                            I have built projects using HTML, CSS and
+                            JavaScript and I'm currently expanding my
+                            programming knowledge with Python.
+                        </p>
+
+                        <p>
+                            My goal is to gain real-world development
+                            experience through an internship, learn from
+                            experienced developers and contribute to
+                            meaningful projects.
+                        </p>
+
+                        <a
+                            href="https://github.com/msaadrehmanprogress-beep"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-link">
+
+                            Explore my GitHub
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="about-stats">
+
+                        <div class="stat-card">
+                            <i class="fa-solid fa-code"></i>
+                            <strong>3+</strong>
+                            <span>Web Projects</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <strong>4+</strong>
+                            <span>Technologies</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <strong>BS</strong>
+                            <span>Computer Science</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <i class="fa-solid fa-rocket"></i>
+                            <strong>100%</strong>
+                            <span>Learning Mindset</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number">02</span>
+
+                    <div>
+                        <p class="section-label">WHAT I WORK WITH</p>
+                        <h2>My <span>Skills</span></h2>
+                    </div>
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon html">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+
+                        <h3>HTML5</h3>
+
+                        <p>
+                            Semantic and structured web pages.
+                        </p>
+
+                        <div class="skill-level">
+                            <span style="width: 88%"></span>
+                        </div>
+
+                        <small>Strong Foundation</small>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon css">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+
+                        <h3>CSS3</h3>
+
+                        <p>
+                            Responsive layouts and modern UI design.
+                        </p>
+
+                        <div class="skill-level">
+                            <span style="width: 85%"></span>
+                        </div>
+
+                        <small>Strong Foundation</small>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon js">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            DOM manipulation and interactive websites.
+                        </p>
+
+                        <div class="skill-level">
+                            <span style="width: 65%"></span>
+                        </div>
+
+                        <small>Learning</small>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon python">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+
+                        <h3>Python</h3>
+
+                        <p>
+                            Building programming fundamentals.
+                        </p>
+
+                        <div class="skill-level">
+                            <span style="width: 45%"></span>
+                        </div>
+
+                        <small>Currently Learning</small>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon responsive">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <h3>Responsive Design</h3>
+
+                        <p>
+                            Websites that work across different screens.
+                        </p>
+
+                        <div class="skill-level">
+                            <span style="width: 80%"></span>
+                        </div>
+
+                        <small>Good</small>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon git">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+
+                        <h3>Git & GitHub</h3>
+
+                        <p>
+                            Learning version control and collaboration.
+                        </p>
+
+                        <div class="skill-level">
+                            <span style="width: 40%"></span>
+                        </div>
+
+                        <small>Beginner</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number">03</span>
+
+                    <div>
+                        <p class="section-label">MY RECENT WORK</p>
+                        <h2>Featured <span>Projects</span></h2>
+                    </div>
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- Calculator -->
+
+                    <article class="project-card">
+
+                        <div class="project-image calculator-preview">
+
+                            <div class="calculator-ui">
+
+                                <div class="calc-display">
+                                    128 + 42
+                                </div>
+
+                                <div class="calc-buttons">
+                                    <span>C</span>
+                                    <span>÷</span>
+                                    <span>×</span>
+                                    <span>−</span>
+
+                                    <span>7</span>
+                                    <span>8</span>
+                                    <span>9</span>
+                                    <span>+</span>
+
+                                    <span>4</span>
+                                    <span>5</span>
+                                    <span>6</span>
+                                    <span>=</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-top">
+
+                                <span class="project-number">
+                                    01
+                                </span>
+
+                                <i class="fa-solid fa-calculator"></i>
+
+                            </div>
+
+                            <h3>Calculator Web App</h3>
+
+                            <p>
+                                A responsive calculator interface built
+                                with HTML, CSS and JavaScript with
+                                interactive calculation functionality.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <span class="not-uploaded">
+                                    <i class="fa-solid fa-clock"></i>
+                                    GitHub coming soon
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Blog -->
+
+                    <article class="project-card">
+
+                        <div class="project-image blog-preview">
+
+                            <div class="blog-ui">
+
+                                <div class="blog-nav"></div>
+
+                                <div class="blog-feature"></div>
+
+                                <div class="blog-lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="blog-cards">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-top">
+
+                                <span class="project-number">
+                                    02
+                                </span>
+
+                                <i class="fa-solid fa-blog"></i>
+
+                            </div>
+
+                            <h3>Blog Website</h3>
+
+                            <p>
+                                A clean and responsive blog website
+                                focused on typography, layout,
+                                navigation and modern web presentation.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <span class="not-uploaded">
+                                    <i class="fa-solid fa-clock"></i>
+                                    GitHub coming soon
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ProKitchen -->
+
+                    <article class="project-card">
+
+                        <div class="project-image kitchen-preview">
+
+                            <div class="kitchen-ui">
+
+                                <div class="kitchen-nav">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="kitchen-hero">
+                                    <div></div>
+                                </div>
+
+                                <div class="food-cards">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="project-top">
+
+                                <span class="project-number">
+                                    03
+                                </span>
+
+                                <i class="fa-solid fa-utensils"></i>
+
+                            </div>
+
+                            <h3>ProKitchen Website</h3>
+
+                            <p>
+                                A modern responsive kitchen website
+                                designed with attractive layouts,
+                                navigation and interactive elements.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <span class="not-uploaded">
+                                    <i class="fa-solid fa-clock"></i>
+                                    GitHub coming soon
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section class="section education-section" id="education">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number">04</span>
+
+                    <div>
+                        <p class="section-label">MY ACADEMIC JOURNEY</p>
+                        <h2>Education</h2>
+                    </div>
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2025 — 2029
+                            </span>
+
+                            <h3>
+                                BS Computer Science
+                            </h3>
+
+                            <h4>
+                                Government Graduate College,
+                                Asghar Mall, Rawalpindi
+                            </h4>
+
+                            <p>
+                                Punjab University
+                            </p>
+
+                            <span class="education-status">
+                                Currently Studying
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                2022 — 2024
+                            </span>
+
+                            <h3>
+                                Intermediate (ICS)
+                            </h3>
+
+                            <h4>
+                                Government Graduate College,
+                                Shahkot
+                            </h4>
+
+                            <p>
+                                District Nankana Sahib
+                            </p>
+
+                            <span class="education-status completed">
+                                Completed
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number">05</span>
+
+                    <div>
+                        <p class="section-label">LET'S CONNECT</p>
+                        <h2>Get In <span>Touch</span></h2>
+                    </div>
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-info">
+
+                        <h3>
+                            Have an opportunity or project?
+                        </h3>
+
+                        <p>
+                            I'm currently looking for internship
+                            opportunities where I can learn, grow
+                            and contribute to real-world projects.
+                        </p>
+
+
+                        <div class="contact-items">
+
+                            <a
+                                href="mailto:msaadrehmanprogrss@gmail.com"
+                                class="contact-item">
+
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+
+                                <div>
+                                    <span>Email</span>
+                                    <strong>
+                                        msaadrehmanprogrss@gmail.com
+                                    </strong>
+                                </div>
+
+                            </a>
+
+
+                            <a
+                                href="https://github.com/msaadrehmanprogress-beep"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-item">
+
+                                <div class="contact-icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+
+                                <div>
+                                    <span>GitHub</span>
+                                    <strong>
+                                        msaadrehmanprogress-beep
+                                    </strong>
+                                </div>
+
+                            </a>
+
+
+                            <div class="contact-item">
+
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <div>
+                                    <span>Location</span>
+                                    <strong>
+                                        Rawalpindi, Pakistan
+                                    </strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form" id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Your Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Your Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                placeholder="Internship opportunity"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                rows="6"
+                                placeholder="Write your message..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary submit-btn">
+
+                            Send Message
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+                        <p
+                            class="form-message"
+                            id="formMessage">
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                <span>&lt;</span>Saad<span>/&gt;</span>
+            </a>
+
+            <p>
+                Building my skills. Creating my future.
+            </p>
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://github.com/msaadrehmanprogress-beep"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+                <a href="mailto:msaadrehmanprogrss@gmail.com">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
 
         </div>
 
-        <p class="copyright">
-            © 2026 All Rights Reserved | Designed By Saad
-        </p>
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                Saad Rehman. All rights reserved.
+            </p>
+
+        </div>
 
     </footer>
 
-</body>
 
+    <!-- Back To Top -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
